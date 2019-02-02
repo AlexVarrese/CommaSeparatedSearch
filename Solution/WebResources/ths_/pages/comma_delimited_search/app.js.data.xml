@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{43fa33b4-e223-e911-a950-000d3a36e933}</WebResourceId>
+  <Name>ths_/pages/comma_delimited_search/app.js</Name>
+  <DisplayName>ths_/pages/comma_delimited_search/app.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/ths_pagescomma_delimited_searchappjs43FA33B4-E223-E911-A950-000D3A36E933</FileName>
+</WebResource>

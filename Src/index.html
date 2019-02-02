@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Comma-Delimited Search</title>
+        <script language="javascript" src="../../../ClientGlobalContext.js.aspx"></script>
+        <script language="javascript" src="./app.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css"></link>
+    </head>
+    <body onload="App.onLoad();">
+        <header>
+            Comma-Delimited Search:
+        </header>
+        <main>
+            <div class="viewName">
+                <label class="viewName" for="viewName">
+                    View Name:
+                </label>
+                <input type="text" id="viewName" placeholder="View Name" disabled />
+            </div>
+            <div class="searchBox">
+                <textarea placeholder="Search" id="searchBox" disabled></textarea>
+            </div>
+        </main>
+        <footer>
+            <button id="saveButton" disabled>Save Search</button>
+            <button id="cancelButton" disabled>Cancel</button>
+        </footer>
+        <div id="overlay">
+            <div class="spinner"></div>
+        </div>
+    </body>
+</html>

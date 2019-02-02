@@ -15,14 +15,17 @@ Export-CrmSolution `
 	-conn $connection `
 	-SolutionName $solution.name `
 	-SolutionZipFileName "$($solution.name)_managed.zip" `
-	-Managed
+    -Managed
+
+Remove-Item "$solutionPath\*" -Recurse
 
 Start-Process "$toolsPath\SolutionPackager.exe" `
 	-ArgumentList `
 		"/action: Extract", `
 		"/zipfile: $($solution.name).zip", `
 		"/folder: $solutionPath", `
-		"/packagetype: Both" `
+        "/packagetype: Both", `
+        "/map: $PSScriptRoot\..\map.xml" `
 	-Wait `
 	-NoNewWindow
 

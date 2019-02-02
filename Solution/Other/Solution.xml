@@ -77,7 +77,13 @@
         </Address>
       </Addresses>
     </Publisher>
-    <RootComponents />
+    <RootComponents>
+      <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
+      <RootComponent type="61" schemaName="ths_/pages/comma_delimited_search/app.js" behavior="0" />
+      <RootComponent type="61" schemaName="ths_/pages/comma_delimited_search/index.html" behavior="0" />
+      <RootComponent type="61" schemaName="ths_/pages/comma_delimited_search/ribbon_action.js" behavior="0" />
+      <RootComponent type="61" schemaName="ths_/pages/comma_delimited_search/style.css" behavior="0" />
+    </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>

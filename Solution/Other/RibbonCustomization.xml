@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="ths.ApplicationRibbon.{!EntityLogicalName}.CommaDelimitedSearch.Button.CustomAction" Location="Mscrm.HomepageGrid.{!EntityLogicalName}.MainTab.Management.Controls._children" Sequence="55">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:ths.ApplicationRibbon.CommaDelimitedSearch.Button.Alt" Command="ths.ApplicationRibbon.CommaDelimitedSearch.Command" Id="ths.ApplicationRibbon.{!EntityLogicalName}.CommaDelimitedSearch.Button" Image32by32="/_imgs/search_normal.gif" Image16by16="/_imgs/search_normal.gif" LabelText="$LocLabels:ths.ApplicationRibbon.CommaDelimitedSearch.Button.LabelText" Sequence="55" TemplateAlias="o2" ToolTipTitle="$LocLabels:ths.ApplicationRibbon.CommaDelimitedSearch.Button.ToolTipTitle" ToolTipDescription="$LocLabels:ths.ApplicationRibbon.CommaDelimitedSearch.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="ths.ApplicationRibbon.CommaDelimitedSearch.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="openSearchDialog" Library="$webresource:ths_/pages/comma_delimited_search/ribbon_action.js">
+          <CrmParameter Value="SelectedEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="ths.ApplicationRibbon.CommaDelimitedSearch.Button.Alt">
+      <Titles>
+        <Title description="Search" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ths.ApplicationRibbon.CommaDelimitedSearch.Button.LabelText">
+      <Titles>
+        <Title description="Search" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ths.ApplicationRibbon.CommaDelimitedSearch.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Search using a comma-delimited list." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ths.ApplicationRibbon.CommaDelimitedSearch.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Search" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

@@ -24,7 +24,8 @@ $connection = GetConnection
 Import-CrmSolutionAsync `
 	-conn $connection `
 	-SolutionFilePath ".\$($solution.name).zip" `
-	-PublishChanges `
-	-BlockUntilImportComplete
+	-PublishChanges:$true `
+	-BlockUntilImportComplete:$true `
+	-MaxWaitTimeInSeconds -1
 
 Remove-Item ".\$($solution.name).zip"

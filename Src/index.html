@@ -1,7 +1,9 @@
 <html>
     <head>
         <title>Comma-Delimited Search</title>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
         <script language="javascript" src="../../../ClientGlobalContext.js.aspx"></script>
+        <script language="javascript" src="./crm_sdk.js"></script>
         <script language="javascript" src="./app.js"></script>
         <link rel="stylesheet" type="text/css" href="./style.css"></link>
     </head>
@@ -10,22 +12,28 @@
             Comma-Delimited Search:
         </header>
         <main>
+            <p id="error"></p>
             <div class="viewName">
                 <label class="viewName" for="viewName">
-                    View Name:
+                    View Name
+                    <img alt="Required" src="./required.gif" />
                 </label>
-                <input type="text" id="viewName" placeholder="View Name" disabled />
+                <input type="text" id="viewName" placeholder="View Name" />
             </div>
             <div class="searchBox">
-                <textarea placeholder="Search" id="searchBox" disabled></textarea>
+                <textarea placeholder="Search" id="searchBox"></textarea>
             </div>
         </main>
         <footer>
-            <button id="saveButton" disabled>Save Search</button>
-            <button id="cancelButton" disabled>Cancel</button>
+            <button id="saveButton" class="blueButton">Save Search</button>
+            <button id="cancelButton" onclick="window.close();">Cancel</button>
         </footer>
-        <div id="overlay">
-            <div class="spinner"></div>
+        <div id="overlay" class="hidden">
+            <div id="spinner"></div>
+            <div id="success">
+                <p>Your view has been created successfully.</p>
+                <button class="blueButton" onclick="window.close();">Close</button>
+            </div>
         </div>
     </body>
 </html>
